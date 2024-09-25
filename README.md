@@ -8,23 +8,41 @@ https://html-preview.github.io/?url=https://github.com/Hinkleaj/Interactive_Worl
 [https://html-preview.github.io/?url=https://github.com/Hinkleaj/Interactive_World_Map/blob/main/WorldMap.html]
 
 
-# Rule 1
-Description for rule 1.
+```{r, fig.height=4, fig.width=5, warning=FALSE, message=FALSE}
+library(ggthemes)
+library(kableExtra)
+library(ggplot2)
+library(dplyr)
+data("mtcars")
+```
+:::::::::::::: {.columns}
+::: {.column width="30%"}
 
-<div style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-rule: 1px dotted #e0e0e0; -moz-column-rule: 1px dotted #e0e0e0; column-rule: 1px dotted #e0e0e0;">
-    <div style="display: inline-block;">
-        <h2>Good</h2>
-        <pre><code class="language-c">int foo (void) 
-{
-    int i;
-}
-</code></pre>
-    </div>
-    <div style="display: inline-block;">
-        <h2>Bad</h2>
-        <pre><code class="language-c">int foo (void) {
-    int i;
-}
-</code></pre>
-    </div>
-</div>
+```{r}
+mtcars %>% 
+    select(disp, mpg) %>% 
+    sample_n(10) %>% 
+    kbl() %>% 
+    kable_styling()
+```
+
+:::
+::: {.column width="5%"}
+
+\
+
+:::
+::: {.column width="65%"}
+
+
+\
+
+```{r, fig.height=4, fig.width=7}
+mtcars %>% 
+    ggplot(aes(x=disp, y=mpg)) +
+    geom_point() +
+    theme_excel_new()
+```
+
+:::
+::::::::::::::
