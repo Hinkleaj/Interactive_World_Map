@@ -3,4 +3,6 @@ This map was my final project for Fab Academy. Everything you want to know about
 
 [https://htmlpreview.github.io/https://github.com/Hinkleaj/Interactive_World_Map/blob/main/WorldMap.html](test)
 
-[https://html-preview.github.io/?url=https://github.com/Hinkleaj/Interactive_World_Map/blob/main/WorldMap.html](nuther test)
+https://html-preview.github.io/?url=https://github.com/Hinkleaj/Interactive_World_Map/blob/main/WorldMap.html
+
+[https://html-preview.github.io/?url=https://github.com/Hinkleaj/Interactive_World_Map/blob/main/WorldMap.html]
