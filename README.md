@@ -1,2 +1,2 @@
 # Interactive_World_Map
-This map was my final project for Fab Academy. The laser engraved panels are activated using embedded ultrasonic sensors. 
+This map was my final project for Fab Academy. Everything you want to know about it is in the [WorldMap.html](WorldMap.html) file.
