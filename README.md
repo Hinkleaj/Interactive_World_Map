@@ -8,41 +8,13 @@ https://html-preview.github.io/?url=https://github.com/Hinkleaj/Interactive_Worl
 [https://html-preview.github.io/?url=https://github.com/Hinkleaj/Interactive_World_Map/blob/main/WorldMap.html]
 
 
-```{r, fig.height=4, fig.width=5, warning=FALSE, message=FALSE}
-library(ggthemes)
-library(kableExtra)
-library(ggplot2)
-library(dplyr)
-data("mtcars")
-```
-:::::::::::::: {.columns}
-::: {.column width="30%"}
-
-```{r}
-mtcars %>% 
-    select(disp, mpg) %>% 
-    sample_n(10) %>% 
-    kbl() %>% 
-    kable_styling()
-```
-
-:::
-::: {.column width="5%"}
-
-\
-
-:::
-::: {.column width="65%"}
-
-
-\
-
-```{r, fig.height=4, fig.width=7}
-mtcars %>% 
-    ggplot(aes(x=disp, y=mpg)) +
-    geom_point() +
-    theme_excel_new()
-```
-
-:::
-::::::::::::::
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">Title</b></td>
+    <td><b style="font-size:30px">Title 2</b></td>
+ </tr>
+ <tr>
+    <td>Lorem ipsum ...</td>
+    <td>Lorem ipsum ...</td>
+ </tr>
+</table>
